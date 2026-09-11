@@ -7,3 +7,9 @@ fastapi>=0.109.0
 uvicorn[standard]>=0.27.0
 pydantic>=2.6.0
 pandas>=2.2.0
+python-dotenv>=1.0.0       # Required for loading .env variables (Databricks tokens, hosts)
+watchfiles>=0.21.0         # Enables auto-reloading during server development
+
+# --- Database & Storage ---
+databricks-sql-connector[pyarrow]>=3.0.0
+pyarrow>=15.0.0
