@@ -10,11 +10,23 @@ build/
 .venv/
 venv/
 env/
+ENV/
 
 # Environment variables (secrets)
 .env
 *.env
 !.env.example
+*.pem
+*.key
+
+# Databricks & Spark artifacts
+.databricks/
+.databrickscfg
+.spark-staging/
+metastore_db/
+derby.log
+checkpoint/
+_delta_log/
 
 # IDE
 .vscode/
@@ -34,3 +46,4 @@ Desktop.ini
 .pytest_cache/
 .coverage
 htmlcov/
+.mypy_cache/
